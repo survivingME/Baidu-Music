@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A302BE431BF1E21C00B91574 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302BE421BF1E21C00B91574 /* HomeTableViewController.swift */; };
+		A364952F1BF0966500E03198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364952E1BF0966500E03198 /* AppDelegate.swift */; };
+		A36495341BF0966500E03198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36495321BF0966500E03198 /* Main.storyboard */; };
+		A36495361BF0966500E03198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36495351BF0966500E03198 /* Assets.xcassets */; };
+		A36495391BF0966500E03198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36495371BF0966500E03198 /* LaunchScreen.storyboard */; };
+		A36495441BF0966500E03198 /* BaiDuMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36495431BF0966500E03198 /* BaiDuMusicTests.swift */; };
+		A364954F1BF0966500E03198 /* BaiDuMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364954E1BF0966500E03198 /* BaiDuMusicUITests.swift */; };
+		A3C42D9A1BF5A8CE007721DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD3D831BF3439000CADE05 /* Alamofire.framework */; };
+		A3C42D9B1BF5A8CE007721DF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3FD3D831BF3439000CADE05 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3F3D1511BF43F0E00C6C0ED /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3D14A1BF43ED800C6C0ED /* Kingfisher.framework */; };
+		A3F3D1551BF43F9000C6C0ED /* Kingfisher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3F3D14A1BF43ED800C6C0ED /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3F3D1621BF441C500C6C0ED /* JGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F3D1611BF441AF00C6C0ED /* JGProgressHUD.framework */; };
+		A3F3D1631BF441C500C6C0ED /* JGProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3F3D1611BF441AF00C6C0ED /* JGProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3F3D1661BF4693000C6C0ED /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302BE401BF1E13E00B91574 /* SwiftyJSON.swift */; };
+		A3FD3D361BF328D600CADE05 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD3D351BF328D600CADE05 /* PlayerViewController.swift */; };
+		A3FD3D531BF33C3700CADE05 /* AFSoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD3D491BF33C3700CADE05 /* AFSoundItem.m */; };
+		A3FD3D541BF33C3700CADE05 /* AFSoundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD3D4C1BF33C3700CADE05 /* AFSoundPlayback.m */; };
+		A3FD3D551BF33C3700CADE05 /* AFSoundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD3D4E1BF33C3700CADE05 /* AFSoundQueue.m */; };
+		A3FD3D561BF33C3700CADE05 /* AFSoundRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD3D501BF33C3700CADE05 /* AFSoundRecord.m */; };
+		A3FD3D571BF33C3700CADE05 /* NSTimer+AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD3D521BF33C3700CADE05 /* NSTimer+AFSoundManager.m */; };
+		A3FD3D591BF33C8100CADE05 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD3D581BF33C8100CADE05 /* AVFoundation.framework */; };
+		A3FD3D5B1BF33C8B00CADE05 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD3D5A1BF33C8B00CADE05 /* AudioToolbox.framework */; };
+		A3FD3D5D1BF33C9500CADE05 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD3D5C1BF33C9500CADE05 /* MediaPlayer.framework */; };
+		A3FD3D901BF3439800CADE05 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD3D831BF3439000CADE05 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A36495401BF0966500E03198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A36495231BF0966500E03198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A364952A1BF0966500E03198;
+			remoteInfo = BaiDuMusic;
+		};
+		A364954B1BF0966500E03198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A36495231BF0966500E03198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A364952A1BF0966500E03198;
+			remoteInfo = BaiDuMusic;
+		};
+		A3C42D9C1BF5A8CE007721DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		A3F3D1471BF43ED800C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D0B1AD2CFA600CFC3EB;
+			remoteInfo = "Kingfisher-Demo";
+		};
+		A3F3D1491BF43ED800C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
+			remoteInfo = Kingfisher;
+		};
+		A3F3D14B1BF43ED800C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
+			remoteInfo = KingfisherTests;
+		};
+		A3F3D14D1BF43ED800C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49C21BEDA53F00CE335D;
+			remoteInfo = "Kingfisher-tvOS-Demo";
+		};
+		A3F3D14F1BF43ED800C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49D61BEDA67C00CE335D;
+			remoteInfo = "Kingfisher-tvOS";
+		};
+		A3F3D1521BF43F3900C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = Kingfisher;
+		};
+		A3F3D15C1BF441AF00C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BC01873197B2AA500DA4C49;
+			remoteInfo = JGProgressHUD;
+		};
+		A3F3D15E1BF441AF00C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B60B24019A3B3C500ED1A4E;
+			remoteInfo = "JGProgressHUD Resources";
+		};
+		A3F3D1601BF441AF00C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BF7DC5A1AEFCFD9000A0AE0;
+			remoteInfo = "JGProgressHUD Framework";
+		};
+		A3F3D1641BF441C500C6C0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BF7DC591AEFCFD9000A0AE0;
+			remoteInfo = "JGProgressHUD Framework";
+		};
+		A3FD3D821BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		A3FD3D841BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		A3FD3D861BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		A3FD3D881BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		A3FD3D8A1BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		A3FD3D8C1BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		A3FD3D8E1BF3439000CADE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3F3D1541BF43F5C00C6C0ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3F3D1631BF441C500C6C0ED /* JGProgressHUD.framework in CopyFiles */,
+				A3C42D9B1BF5A8CE007721DF /* Alamofire.framework in CopyFiles */,
+				A3F3D1551BF43F9000C6C0ED /* Kingfisher.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A302BE401BF1E13E00B91574 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		A302BE421BF1E21C00B91574 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		A364952B1BF0966500E03198 /* BaiDuMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A364952E1BF0966500E03198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A36495331BF0966500E03198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A36495351BF0966500E03198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A36495381BF0966500E03198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A364953A1BF0966500E03198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A364953F1BF0966500E03198 /* BaiDuMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiDuMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36495431BF0966500E03198 /* BaiDuMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiDuMusicTests.swift; sourceTree = "<group>"; };
+		A36495451BF0966500E03198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A364954A1BF0966500E03198 /* BaiDuMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiDuMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A364954E1BF0966500E03198 /* BaiDuMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiDuMusicUITests.swift; sourceTree = "<group>"; };
+		A36495501BF0966500E03198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = "Kingfisher-master/Kingfisher.xcodeproj"; sourceTree = "<group>"; };
+		A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JGProgressHUD.xcodeproj; path = "JGProgressHUD-master/JGProgressHUD.xcodeproj"; sourceTree = "<group>"; };
+		A3FD3D351BF328D600CADE05 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		A3FD3D481BF33C3700CADE05 /* AFSoundItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundItem.h; sourceTree = "<group>"; };
+		A3FD3D491BF33C3700CADE05 /* AFSoundItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundItem.m; sourceTree = "<group>"; };
+		A3FD3D4A1BF33C3700CADE05 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
+		A3FD3D4B1BF33C3700CADE05 /* AFSoundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundPlayback.h; sourceTree = "<group>"; };
+		A3FD3D4C1BF33C3700CADE05 /* AFSoundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundPlayback.m; sourceTree = "<group>"; };
+		A3FD3D4D1BF33C3700CADE05 /* AFSoundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundQueue.h; sourceTree = "<group>"; };
+		A3FD3D4E1BF33C3700CADE05 /* AFSoundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundQueue.m; sourceTree = "<group>"; };
+		A3FD3D4F1BF33C3700CADE05 /* AFSoundRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundRecord.h; sourceTree = "<group>"; };
+		A3FD3D501BF33C3700CADE05 /* AFSoundRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundRecord.m; sourceTree = "<group>"; };
+		A3FD3D511BF33C3700CADE05 /* NSTimer+AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+AFSoundManager.h"; sourceTree = "<group>"; };
+		A3FD3D521BF33C3700CADE05 /* NSTimer+AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+AFSoundManager.m"; sourceTree = "<group>"; };
+		A3FD3D581BF33C8100CADE05 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A3FD3D5A1BF33C8B00CADE05 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A3FD3D5C1BF33C9500CADE05 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A3FD3D6C1BF3417C00CADE05 /* BaiDuMusic-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaiDuMusic-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A36495281BF0966500E03198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F3D1511BF43F0E00C6C0ED /* Kingfisher.framework in Frameworks */,
+				A3FD3D901BF3439800CADE05 /* Alamofire.framework in Frameworks */,
+				A3F3D1621BF441C500C6C0ED /* JGProgressHUD.framework in Frameworks */,
+				A3FD3D5D1BF33C9500CADE05 /* MediaPlayer.framework in Frameworks */,
+				A3C42D9A1BF5A8CE007721DF /* Alamofire.framework in Frameworks */,
+				A3FD3D5B1BF33C8B00CADE05 /* AudioToolbox.framework in Frameworks */,
+				A3FD3D591BF33C8100CADE05 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A364953C1BF0966500E03198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36495471BF0966500E03198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A36495221BF0966500E03198 = {
+			isa = PBXGroup;
+			children = (
+				A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */,
+				A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */,
+				A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */,
+				A3FD3D5C1BF33C9500CADE05 /* MediaPlayer.framework */,
+				A3FD3D5A1BF33C8B00CADE05 /* AudioToolbox.framework */,
+				A3FD3D581BF33C8100CADE05 /* AVFoundation.framework */,
+				A364952D1BF0966500E03198 /* BaiDuMusic */,
+				A36495421BF0966500E03198 /* BaiDuMusicTests */,
+				A364954D1BF0966500E03198 /* BaiDuMusicUITests */,
+				A364952C1BF0966500E03198 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A364952C1BF0966500E03198 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A364952B1BF0966500E03198 /* BaiDuMusic.app */,
+				A364953F1BF0966500E03198 /* BaiDuMusicTests.xctest */,
+				A364954A1BF0966500E03198 /* BaiDuMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A364952D1BF0966500E03198 /* BaiDuMusic */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD3D471BF33C3700CADE05 /* Classes */,
+				A364952E1BF0966500E03198 /* AppDelegate.swift */,
+				A3FD3D351BF328D600CADE05 /* PlayerViewController.swift */,
+				A302BE421BF1E21C00B91574 /* HomeTableViewController.swift */,
+				A302BE401BF1E13E00B91574 /* SwiftyJSON.swift */,
+				A36495321BF0966500E03198 /* Main.storyboard */,
+				A36495351BF0966500E03198 /* Assets.xcassets */,
+				A36495371BF0966500E03198 /* LaunchScreen.storyboard */,
+				A364953A1BF0966500E03198 /* Info.plist */,
+				A3FD3D6C1BF3417C00CADE05 /* BaiDuMusic-Bridging-Header.h */,
+			);
+			path = BaiDuMusic;
+			sourceTree = "<group>";
+		};
+		A36495421BF0966500E03198 /* BaiDuMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				A36495431BF0966500E03198 /* BaiDuMusicTests.swift */,
+				A36495451BF0966500E03198 /* Info.plist */,
+			);
+			path = BaiDuMusicTests;
+			sourceTree = "<group>";
+		};
+		A364954D1BF0966500E03198 /* BaiDuMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A364954E1BF0966500E03198 /* BaiDuMusicUITests.swift */,
+				A36495501BF0966500E03198 /* Info.plist */,
+			);
+			path = BaiDuMusicUITests;
+			sourceTree = "<group>";
+		};
+		A3F3D1401BF43ED800C6C0ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F3D1481BF43ED800C6C0ED /* Kingfisher-Demo.app */,
+				A3F3D14A1BF43ED800C6C0ED /* Kingfisher.framework */,
+				A3F3D14C1BF43ED800C6C0ED /* KingfisherTests.xctest */,
+				A3F3D14E1BF43ED800C6C0ED /* Kingfisher-tvOS-Demo.app */,
+				A3F3D1501BF43ED800C6C0ED /* Kingfisher.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3F3D1571BF441AF00C6C0ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F3D15D1BF441AF00C6C0ED /* libJGProgressHUD.a */,
+				A3F3D15F1BF441AF00C6C0ED /* JGProgressHUD Resources.bundle */,
+				A3F3D1611BF441AF00C6C0ED /* JGProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FD3D471BF33C3700CADE05 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD3D481BF33C3700CADE05 /* AFSoundItem.h */,
+				A3FD3D491BF33C3700CADE05 /* AFSoundItem.m */,
+				A3FD3D4A1BF33C3700CADE05 /* AFSoundManager.h */,
+				A3FD3D4B1BF33C3700CADE05 /* AFSoundPlayback.h */,
+				A3FD3D4C1BF33C3700CADE05 /* AFSoundPlayback.m */,
+				A3FD3D4D1BF33C3700CADE05 /* AFSoundQueue.h */,
+				A3FD3D4E1BF33C3700CADE05 /* AFSoundQueue.m */,
+				A3FD3D4F1BF33C3700CADE05 /* AFSoundRecord.h */,
+				A3FD3D501BF33C3700CADE05 /* AFSoundRecord.m */,
+				A3FD3D511BF33C3700CADE05 /* NSTimer+AFSoundManager.h */,
+				A3FD3D521BF33C3700CADE05 /* NSTimer+AFSoundManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A3FD3D791BF3439000CADE05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD3D831BF3439000CADE05 /* Alamofire.framework */,
+				A3FD3D851BF3439000CADE05 /* Alamofire iOS Tests.xctest */,
+				A3FD3D871BF3439000CADE05 /* Alamofire.framework */,
+				A3FD3D891BF3439000CADE05 /* Alamofire OSX Tests.xctest */,
+				A3FD3D8B1BF3439000CADE05 /* Alamofire.framework */,
+				A3FD3D8D1BF3439000CADE05 /* Alamofire tvOS Tests.xctest */,
+				A3FD3D8F1BF3439000CADE05 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A364952A1BF0966500E03198 /* BaiDuMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36495531BF0966500E03198 /* Build configuration list for PBXNativeTarget "BaiDuMusic" */;
+			buildPhases = (
+				A36495271BF0966500E03198 /* Sources */,
+				A36495281BF0966500E03198 /* Frameworks */,
+				A36495291BF0966500E03198 /* Resources */,
+				A3F3D1541BF43F5C00C6C0ED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3F3D1531BF43F3900C6C0ED /* PBXTargetDependency */,
+				A3F3D1651BF441C500C6C0ED /* PBXTargetDependency */,
+				A3C42D9D1BF5A8CE007721DF /* PBXTargetDependency */,
+			);
+			name = BaiDuMusic;
+			productName = BaiDuMusic;
+			productReference = A364952B1BF0966500E03198 /* BaiDuMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A364953E1BF0966500E03198 /* BaiDuMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36495561BF0966500E03198 /* Build configuration list for PBXNativeTarget "BaiDuMusicTests" */;
+			buildPhases = (
+				A364953B1BF0966500E03198 /* Sources */,
+				A364953C1BF0966500E03198 /* Frameworks */,
+				A364953D1BF0966500E03198 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A36495411BF0966500E03198 /* PBXTargetDependency */,
+			);
+			name = BaiDuMusicTests;
+			productName = BaiDuMusicTests;
+			productReference = A364953F1BF0966500E03198 /* BaiDuMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A36495491BF0966500E03198 /* BaiDuMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36495591BF0966500E03198 /* Build configuration list for PBXNativeTarget "BaiDuMusicUITests" */;
+			buildPhases = (
+				A36495461BF0966500E03198 /* Sources */,
+				A36495471BF0966500E03198 /* Frameworks */,
+				A36495481BF0966500E03198 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A364954C1BF0966500E03198 /* PBXTargetDependency */,
+			);
+			name = BaiDuMusicUITests;
+			productName = BaiDuMusicUITests;
+			productReference = A364954A1BF0966500E03198 /* BaiDuMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A36495231BF0966500E03198 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Tangxianhai;
+				TargetAttributes = {
+					A364952A1BF0966500E03198 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					A364953E1BF0966500E03198 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A364952A1BF0966500E03198;
+					};
+					A36495491BF0966500E03198 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A364952A1BF0966500E03198;
+					};
+				};
+			};
+			buildConfigurationList = A36495261BF0966500E03198 /* Build configuration list for PBXProject "BaiDuMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A36495221BF0966500E03198;
+			productRefGroup = A364952C1BF0966500E03198 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A3FD3D791BF3439000CADE05 /* Products */;
+					ProjectRef = A3FD3D781BF3439000CADE05 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = A3F3D1571BF441AF00C6C0ED /* Products */;
+					ProjectRef = A3F3D1561BF441AF00C6C0ED /* JGProgressHUD.xcodeproj */;
+				},
+				{
+					ProductGroup = A3F3D1401BF43ED800C6C0ED /* Products */;
+					ProjectRef = A3F3D13F1BF43ED800C6C0ED /* Kingfisher.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A364952A1BF0966500E03198 /* BaiDuMusic */,
+				A364953E1BF0966500E03198 /* BaiDuMusicTests */,
+				A36495491BF0966500E03198 /* BaiDuMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A3F3D1481BF43ED800C6C0ED /* Kingfisher-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-Demo.app";
+			remoteRef = A3F3D1471BF43ED800C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D14A1BF43ED800C6C0ED /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = A3F3D1491BF43ED800C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D14C1BF43ED800C6C0ED /* KingfisherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KingfisherTests.xctest;
+			remoteRef = A3F3D14B1BF43ED800C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D14E1BF43ED800C6C0ED /* Kingfisher-tvOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-tvOS-Demo.app";
+			remoteRef = A3F3D14D1BF43ED800C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D1501BF43ED800C6C0ED /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = A3F3D14F1BF43ED800C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D15D1BF441AF00C6C0ED /* libJGProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJGProgressHUD.a;
+			remoteRef = A3F3D15C1BF441AF00C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D15F1BF441AF00C6C0ED /* JGProgressHUD Resources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JGProgressHUD Resources.bundle";
+			remoteRef = A3F3D15E1BF441AF00C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F3D1611BF441AF00C6C0ED /* JGProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JGProgressHUD.framework;
+			remoteRef = A3F3D1601BF441AF00C6C0ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D831BF3439000CADE05 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = A3FD3D821BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D851BF3439000CADE05 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = A3FD3D841BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D871BF3439000CADE05 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = A3FD3D861BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D891BF3439000CADE05 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = A3FD3D881BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D8B1BF3439000CADE05 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = A3FD3D8A1BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D8D1BF3439000CADE05 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = A3FD3D8C1BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3FD3D8F1BF3439000CADE05 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = A3FD3D8E1BF3439000CADE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A36495291BF0966500E03198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36495391BF0966500E03198 /* LaunchScreen.storyboard in Resources */,
+				A36495361BF0966500E03198 /* Assets.xcassets in Resources */,
+				A36495341BF0966500E03198 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A364953D1BF0966500E03198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36495481BF0966500E03198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A36495271BF0966500E03198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F3D1661BF4693000C6C0ED /* SwiftyJSON.swift in Sources */,
+				A3FD3D531BF33C3700CADE05 /* AFSoundItem.m in Sources */,
+				A3FD3D561BF33C3700CADE05 /* AFSoundRecord.m in Sources */,
+				A302BE431BF1E21C00B91574 /* HomeTableViewController.swift in Sources */,
+				A3FD3D361BF328D600CADE05 /* PlayerViewController.swift in Sources */,
+				A3FD3D541BF33C3700CADE05 /* AFSoundPlayback.m in Sources */,
+				A3FD3D551BF33C3700CADE05 /* AFSoundQueue.m in Sources */,
+				A364952F1BF0966500E03198 /* AppDelegate.swift in Sources */,
+				A3FD3D571BF33C3700CADE05 /* NSTimer+AFSoundManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A364953B1BF0966500E03198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36495441BF0966500E03198 /* BaiDuMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36495461BF0966500E03198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A364954F1BF0966500E03198 /* BaiDuMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A36495411BF0966500E03198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A364952A1BF0966500E03198 /* BaiDuMusic */;
+			targetProxy = A36495401BF0966500E03198 /* PBXContainerItemProxy */;
+		};
+		A364954C1BF0966500E03198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A364952A1BF0966500E03198 /* BaiDuMusic */;
+			targetProxy = A364954B1BF0966500E03198 /* PBXContainerItemProxy */;
+		};
+		A3C42D9D1BF5A8CE007721DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = A3C42D9C1BF5A8CE007721DF /* PBXContainerItemProxy */;
+		};
+		A3F3D1531BF43F3900C6C0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			targetProxy = A3F3D1521BF43F3900C6C0ED /* PBXContainerItemProxy */;
+		};
+		A3F3D1651BF441C500C6C0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JGProgressHUD Framework";
+			targetProxy = A3F3D1641BF441C500C6C0ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A36495321BF0966500E03198 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A36495331BF0966500E03198 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A36495371BF0966500E03198 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A36495381BF0966500E03198 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A36495511BF0966500E03198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A36495521BF0966500E03198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A36495541BF0966500E03198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = BaiDuMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.txh.BaiDuMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaiDuMusic/BaiDuMusic-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A36495551BF0966500E03198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = BaiDuMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.txh.BaiDuMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaiDuMusic/BaiDuMusic-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A36495571BF0966500E03198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BaiDuMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.txh.BaiDuMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaiDuMusic.app/BaiDuMusic";
+			};
+			name = Debug;
+		};
+		A36495581BF0966500E03198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BaiDuMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.txh.BaiDuMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaiDuMusic.app/BaiDuMusic";
+			};
+			name = Release;
+		};
+		A364955A1BF0966500E03198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BaiDuMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.txh.BaiDuMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BaiDuMusic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A364955B1BF0966500E03198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BaiDuMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.txh.BaiDuMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BaiDuMusic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A36495261BF0966500E03198 /* Build configuration list for PBXProject "BaiDuMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A36495511BF0966500E03198 /* Debug */,
+				A36495521BF0966500E03198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36495531BF0966500E03198 /* Build configuration list for PBXNativeTarget "BaiDuMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A36495541BF0966500E03198 /* Debug */,
+				A36495551BF0966500E03198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36495561BF0966500E03198 /* Build configuration list for PBXNativeTarget "BaiDuMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A36495571BF0966500E03198 /* Debug */,
+				A36495581BF0966500E03198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36495591BF0966500E03198 /* Build configuration list for PBXNativeTarget "BaiDuMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A364955A1BF0966500E03198 /* Debug */,
+				A364955B1BF0966500E03198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A36495231BF0966500E03198 /* Project object */;
+}
